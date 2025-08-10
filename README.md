@@ -67,25 +67,16 @@ dependencies:
 🚀 How to Run
 Clone the repository
 git clone https://github.com/mahnoor-zahid0/Flutter-Scientific-Calculator
+
 Navigate into the project
-
-
 cd flutter-calculator
 Get dependencies
-
-
 flutter pub get
 Run the app
-
-bash
-Copy
-Edit
 flutter run
+
 🎯 Usage Tips
 Basic Mode → Short, clean layout for quick calculations.
-
 Scientific Mode → Ideal for advanced math problems.
-
 Swipe from left or tap menu icon to open the drawer for theme changes.
-
 Use DEL for stepwise deletion, AC to reset the expression.
