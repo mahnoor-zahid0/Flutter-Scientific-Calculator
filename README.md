@@ -1,16 +1,91 @@
-# calculator
+📱 Flutter Scientific & Basic Calculator
+A fully responsive Flutter calculator app built with Riverpod for state management.
+Supports portrait (basic calculator) and landscape (scientific calculator) modes, with an additional toggle button to manually switch between them regardless of device orientation.
 
-A new Flutter project.
+✨ Features
+1. Two Calculator Modes
+Basic Mode (Portrait)
+Standard operations: addition, subtraction, multiplication, division.
+Constants: π, e.
+Decimal point support.
+Percentage %.
+Clear (AC) and Delete (DEL) buttons.
+Scientific Mode (Landscape)
+Includes all basic features.
+Advanced functions: sin, cos, tan, sinh, cosh, tanh, log, ln.
+Power and root operations: ^, √, x², x³, xʸ.
+Factorial !.
+Random number generator (Rand).
+Exponentials: 10ˣ, eˣ.
+Inverse trig functions: sin⁻¹, cos⁻¹, tan⁻¹.
 
-## Getting Started
+2. Theme Customization
+Change the primary color of the app from the navigation drawer.
+Switch between light mode and dark mode.
+One-click reset to default theme (Deep Orange, Dark Mode).
 
-This project is a starting point for a Flutter application.
+3. Manual Mode Switching
+"Mode Toggle" button in the AppBar lets you switch between:
+Basic Calculator
+Scientific Calculator
+without rotating your device.
 
-A few resources to get you started if this is your first Flutter project:
+4. Responsive UI
+Dynamic button sizing based on available screen size.
+Portrait layout: 4-column grid.
+Landscape layout: 10-column grid.
+Circular buttons with adaptive text scaling.
+Display panel adjusts font sizes automatically for readability.
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+5. Accurate Math Parsing
+Uses math_expressions for safe and precise evaluation.
+Preprocessing of special symbols before evaluation:
+× → *
+÷ → /
+% → /100
+π → math.pi
+e → math.e
+√ → sqrt()
+Factorial n! handled manually.
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+
+📂 File Structure
+lib/
+├── main.dart # Entire app logic and UI
+🛠️ Dependencies
+flutter_riverpod → State management.
+math_expressions → Expression parsing and evaluation.
+
+Add to pubspec.yaml:
+yaml
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_riverpod: ^2.4.0
+  math_expressions: ^2.4.0
+🚀 How to Run
+Clone the repository
+git clone https://github.com/mahnoor-zahid0/Flutter-Scientific-Calculator
+Navigate into the project
+
+
+cd flutter-calculator
+Get dependencies
+
+
+flutter pub get
+Run the app
+
+bash
+Copy
+Edit
+flutter run
+🎯 Usage Tips
+Basic Mode → Short, clean layout for quick calculations.
+
+Scientific Mode → Ideal for advanced math problems.
+
+Swipe from left or tap menu icon to open the drawer for theme changes.
+
+Use DEL for stepwise deletion, AC to reset the expression.
